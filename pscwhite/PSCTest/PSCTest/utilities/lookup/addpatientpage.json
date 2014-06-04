@@ -1,0 +1,13 @@
+﻿{
+"Male" : "M",
+"Female" : "F",
+"ZipCode" : "ZipCode",
+"MobilePhoneNumber" : "MobilePhoneNum",
+"PreferMobilePhone" :"Mobile Phone",
+"PreferHomePhone" : "Home Phone",
+"PreferSMS" : "SMS",
+"PreferEmail" : "Email",
+"PreferredCommunicationLangauge" : "ComboBox",
+"Idhasverified" : "ID has been verified",
+"MobilePhone" : "MobilePhoneNum"
+}

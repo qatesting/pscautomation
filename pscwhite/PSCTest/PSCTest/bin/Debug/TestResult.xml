@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-06-03" time="10:32:52">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5477" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug" machine-name="WS0111PA" user="QAtester" user-domain="THERANOS" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" executed="True" result="Success" success="True" time="387.643" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="PSCTest" executed="True" result="Success" success="True" time="387.623" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="tests" executed="True" result="Success" success="True" time="387.622" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="AddPatientTest" executed="True" result="Success" success="True" time="387.615" asserts="0">
+                <results>
+                  <test-case name="PSCTest.tests.AddPatientTest.LoginPSC" executed="True" result="Success" success="True" time="11.213" asserts="0" />
+                  <test-case name="PSCTest.tests.AddPatientTest.SearchAndAddPatient" executed="True" result="Success" success="True" time="355.064" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1003]C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe</TopNode>
+  <SelectedNode>[0-1003]C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1003]C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1004]PSCTest" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1005]PSCTest.tests" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1000]PSCTest.tests.AddPatientTest" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1001]PSCTest.tests.AddPatientTest.LoginPSC" Checked="true" />
+    <Node UniqueName="[0-1002]PSCTest.tests.AddPatientTest.SearchAndAddPatient" Checked="true" />
+  </Nodes>
+</VisualState>

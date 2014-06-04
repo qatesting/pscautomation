@@ -1,0 +1,17 @@
+﻿{
+"ZipCode" : "ZipCode",
+"SameAsMailingAddress" : "Same as mailing address",
+"FirstName" : "txtFirstName",
+"LastName" : "txtLastName",
+"AddGuardian" : "Add Guardian",
+"AddEmergencyContact" : "Add Emergency Contact",
+"AddInsurance" : "Add Insurance",
+"ScanInsuranceBack" : "Click to Scan Back of Card",
+"ScanInsuranceFront" : "Click to Scan Front of Card",
+"PlanType" : "ComboBox",
+"EPO" : "EPO",
+"HMO" : "HMO",
+"PPO" : "PPO",
+"Other" : "Other",
+"InsuranceProvider" : "cmbInsuranceProvider"
+}

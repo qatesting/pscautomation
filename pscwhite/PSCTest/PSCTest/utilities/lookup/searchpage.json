@@ -1,0 +1,9 @@
+﻿{
+"LastName" : "txtLastName",
+"MiddleName" : "txtMiddleName",
+"FirstName" : "txtFirstName",
+"DOB" : "txtDob",
+"Search" : "Search",
+"SearchRecord" : "ListBoxItem",
+"AddNewPatient" : "Add New Patient"
+}
