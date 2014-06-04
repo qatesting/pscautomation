@@ -1,0 +1,4 @@
+############## This project is internal project to automate a web application ###########################
+
+Introduction: This project use TestStack.White with C# to build the framework. It's use data driven approach to automate the tests.
+
