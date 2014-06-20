@@ -1,0 +1,8 @@
+This project is to test PSC using White automation.
+This framework can be use to test PSC all the features and easy to make the test script.
+
+Here is the structure of the framework:
+
+Core: All the core liberaries are here which can be use to complete different task on the system.
+Utilities: Every PSC page has one page object which than can be use in automation script.
+test: This to use the test script using framework

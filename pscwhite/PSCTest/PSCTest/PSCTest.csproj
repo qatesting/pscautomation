@@ -50,6 +50,9 @@
     <Reference Include="Castle.Core">
       <HintPath>..\packages\Castle.Core.3.2.2\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\packages\SikuliIntegrator.1.1.0\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -73,9 +76,15 @@
       <HintPath>..\packages\NUnitTestAdapter.WithFramework.1.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="SikuliModule">
+      <HintPath>..\packages\SikuliIntegrator.1.1.0\lib\SikuliModule.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+      <HintPath>..\packages\SikuliIntegrator.1.1.0\lib\System.Drawing.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -92,6 +101,11 @@
     <Compile Include="core\CsvFileReader.cs" />
     <Compile Include="core\ReadJson.cs" />
     <Compile Include="core\Screenshot.cs" />
+    <Compile Include="tests\DataValidationOfAdditionalInfoPage.cs" />
+    <Compile Include="tests\DataValidationOfBasicPatientInfoPage.cs" />
+    <Compile Include="tests\DuplicatePatients.cs" />
+    <Compile Include="tests\SikuliImageUse.cs" />
+    <Compile Include="tests\AATestRunner.cs" />
     <Compile Include="tests\TestsStructure.cs" />
     <Compile Include="utilities\AdditionalInfoPage.cs" />
     <Compile Include="utilities\BasicInfoPage.cs" />
@@ -140,6 +154,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="logs\screenshots\" />
+    <Folder Include="utilities\lookup\pscimage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JSikuliModule.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

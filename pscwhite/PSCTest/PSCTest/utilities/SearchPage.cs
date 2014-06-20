@@ -10,6 +10,7 @@ using TestStack.White.UIItems;
 using TestStack.White.UIItems.Actions;
 using Thread = System.Threading.Thread;
 using System.Collections.Generic;
+using TestStack.White.UIItems.ListBoxItems;
 
 namespace PSCTest.utilities
 {
@@ -45,6 +46,20 @@ namespace PSCTest.utilities
             EnterDOB();
             Thread.Sleep(2000);
             SelectSearch();
+        }
+
+        public void SearchPatient(string filename, int key)
+        {
+            Thread.Sleep(3000);
+            searchpatients = gpd.GetPatient(filename, key);
+            EnterLastName();
+            Thread.Sleep(1000);
+            EnterFirstName();
+            Thread.Sleep(1000);
+            EnterDOB();
+            Thread.Sleep(2000);
+            SelectSearch();
+            Thread.Sleep(3000);
         }
 
         public bool EnterLastName()
@@ -166,6 +181,23 @@ namespace PSCTest.utilities
             {
                 Console.WriteLine("No Patient Found");
                 return true;
+            }
+        }
+
+        //Getting the values in Search
+        public int FindNumberOfSearchPatients()
+        {
+            int count = 0;
+            try
+            {
+                ListBox listBox = searchwindow.Get<ListBox>(SearchCriteria.ByClassName("ListBox"));
+                count = listBox.Items.Count;
+                return count;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("No Patient Found");
+                return count;
             }
         }
     }

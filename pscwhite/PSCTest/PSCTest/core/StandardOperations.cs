@@ -13,6 +13,7 @@ namespace PSCTest.core
     class StandardOperations
     {
         Window window;
+        bool flag;
         public StandardOperations(Window window)
         {
             this.window = window;
@@ -26,14 +27,14 @@ namespace PSCTest.core
 
         public bool Back()
         {
-            Input.ClickOnSpecificItemByName(window, "Back");
-            return true;
+            flag = Input.ClickOnSpecificItemByName(window, "Back");
+            return flag;
         }
 
         public bool Save()
         {
-            Input.ClickOnSpecificItemByName(window, "Save");
-            return true;
+            flag = Input.Click(window, "Save");
+            return flag;
         }
 
         public bool DeleteCard()
@@ -52,7 +53,7 @@ namespace PSCTest.core
             }
             catch (Exception)
             {
-                Console.WriteLine("Not able to find OK button");
+                Console.WriteLine(">>>>>>>>>>>>>>>>>>>> Not able to find OK button <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
                 return false;                 
             }
         }
@@ -93,5 +94,6 @@ namespace PSCTest.core
                 return false;
             }
         }
+       
     }
 }

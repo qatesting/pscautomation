@@ -13,5 +13,7 @@
 "HMO" : "HMO",
 "PPO" : "PPO",
 "Other" : "Other",
-"InsuranceProvider" : "cmbInsuranceProvider"
+"InsuranceProvider" : "cmbInsuranceProvider",
+"LessThen18YearsAge" : "GuardianRequiredTextBlock",
+"GuardianInfo" : "Guardian Info"
 }

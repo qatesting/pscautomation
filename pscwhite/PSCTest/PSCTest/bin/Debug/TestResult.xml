@@ -1,18 +1,201 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-06-03" time="10:32:52">
+<test-results name="C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" total="30" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-06-19" time="14:13:50">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5477" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug" machine-name="WS0111PA" user="QAtester" user-domain="THERANOS" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" executed="True" result="Success" success="True" time="387.643" asserts="0">
+  <test-suite type="Assembly" name="C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" executed="False" result="Cancelled">
     <results>
-      <test-suite type="Namespace" name="PSCTest" executed="True" result="Success" success="True" time="387.623" asserts="0">
+      <test-suite type="Namespace" name="PSCTest" executed="False" result="Cancelled">
         <results>
-          <test-suite type="Namespace" name="tests" executed="True" result="Success" success="True" time="387.622" asserts="0">
+          <test-suite type="Namespace" name="tests" executed="False" result="Cancelled">
             <results>
-              <test-suite type="TestFixture" name="AddPatientTest" executed="True" result="Success" success="True" time="387.615" asserts="0">
+              <test-suite type="TestFixture" name="AATestRunner" executed="True" result="Success" success="True" time="32.069" asserts="0">
                 <results>
-                  <test-case name="PSCTest.tests.AddPatientTest.LoginPSC" executed="True" result="Success" success="True" time="11.213" asserts="0" />
-                  <test-case name="PSCTest.tests.AddPatientTest.SearchAndAddPatient" executed="True" result="Success" success="True" time="355.064" asserts="0" />
+                  <test-case name="PSCTest.tests.AATestRunner.LoginPSC" executed="True" result="Success" success="True" time="11.311" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="DataValidationOfAdditionalInfoPage" executed="False" result="Cancelled">
+                <results>
+                  <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Before_Running_Test_Angainst_Billing_Address" executed="True" result="Success" success="True" time="234.286" asserts="0">
+                    <reason>
+                      <message><![CDATA[]]></message>
+                    </reason>
+                  </test-case>
+                  <test-suite type="ParameterizedTest" name="Validate_Billing_Address_In_Additional_Info_Page" executed="True" result="Success" success="True" time="640.686" asserts="0">
+                    <results>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page(1)" executed="True" result="Success" success="True" time="216.700" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page(2)" executed="True" result="Success" success="True" time="141.773" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page(3)" executed="True" result="Success" success="True" time="140.797" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page(4)" executed="True" result="Success" success="True" time="141.365" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Validate_Billing_City_In_Additional_Info_Page" executed="True" result="Success" success="True" time="578.590" asserts="0">
+                    <results>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page(1)" executed="True" result="Success" success="True" time="145.126" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page(2)" executed="True" result="Success" success="True" time="144.453" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page(3)" executed="True" result="Success" success="True" time="144.843" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page(4)" executed="True" result="Success" success="True" time="144.136" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Validate_Billing_State_In_Additional_Info_Page" executed="True" result="Success" success="True" time="585.925" asserts="0">
+                    <results>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page(1)" executed="True" result="Success" success="True" time="146.246" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page(2)" executed="True" result="Success" success="True" time="146.953" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page(3)" executed="True" result="Success" success="True" time="146.322" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page(4)" executed="True" result="Success" success="True" time="146.351" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Validate_Billing_Street_Address_In_Additional_Info_Page" executed="True" result="Success" success="True" time="433.712" asserts="0">
+                    <results>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page(1)" executed="True" result="Success" success="True" time="108.527" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page(2)" executed="True" result="Success" success="True" time="108.162" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page(3)" executed="True" result="Success" success="True" time="108.571" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page(4)" executed="True" result="Success" success="True" time="108.407" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Validate_Billing_Zip_Code_In_Additional_Info_Page" executed="True" result="Success" success="True" time="572.642" asserts="0">
+                    <results>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page(1)" executed="True" result="Success" success="True" time="143.082" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page(2)" executed="True" result="Success" success="True" time="143.583" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page(3)" executed="True" result="Success" success="True" time="143.588" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page(4)" executed="True" result="Success" success="True" time="142.333" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Validate_Mailing_City_In_Additional_Info_Page" executed="True" result="Success" success="True" time="406.058" asserts="0">
+                    <results>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(1)" executed="True" result="Success" success="True" time="101.164" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(2)" executed="True" result="Success" success="True" time="101.839" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(3)" executed="True" result="Success" success="True" time="101.435" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(4)" executed="True" result="Success" success="True" time="101.586" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Validate_Mailing_State_In_Additional_Info_Page" executed="False" result="Cancelled">
+                    <results>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page(1)" executed="True" result="Success" success="True" time="98.331" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page(2)" executed="True" result="Success" success="True" time="126.498" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page(3)" executed="True" result="Success" success="True" time="16.169" asserts="0">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page(4)" executed="False" result="Cancelled">
+                        <failure>
+                          <message><![CDATA[Test cancelled by user]]></message>
+                          <stack-trace><![CDATA[at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+at NUnit.Core.Reflect.InvokeMethod(MethodInfo method, Object fixture, Object[] args)
+at NUnit.Core.TestMethod.RunTestMethod()
+at NUnit.Core.TestMethod.RunTestCase(TestResult testResult)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
                 </results>
               </test-suite>
             </results>

@@ -1,0 +1,14 @@
+ID,FirstName,MiddleName,LastName,DOB,Gender,ZipCode,MobilePhone,HomePhone,Email,PreferredMethodOfContact,PreferredCommunicationLangauge
+1,Senegal,,Dakar,01/01/1981,M,7011,5046218927,5048451427,jbutt@gmail.com,Mobile Phone,s
+2,Josephine,,Darakjy,01/01/1989,F,48116,8102929388,8103749840,josephine_darakjy@darakjy.org,SMS,s
+3,Art,,Venere,01/01/1989,M,8014,8566368749,8562644130,art@venere.org,SMS,j
+4,Lenna,Iturbide,Paprocki,02/02/1989,M,99501,9073854412,9079212010,lpaprocki@hotmail.com,Home Phone,c
+5,Donette,Caudy,Foller,08/03/1978,M,45011,5135701893,5135494561,donette.foller@cox.net,Mobile Phone,c
+6,Simona,Chui,Morasca,01/01/1981,F,44805,4195032484,4198006759,simona@morasca.com,Email,c
+7,Mitsue,Kusko,Tollner,01/01/1989,F,60632,7735736914,7739248565,mitsue_tollner@yahoo.com,SMS,s
+8,Leota,Figeroa,Dilliard,01/01/1989,F,95111,4087523500,4088131105,leota@hotmail.com,SMS,s
+9,Sage,Corrio,Wieser,02/02/1989,F,57105,6054142147,6057944895,sage_wieser@cox.net,Home Phone,e
+10,Kris,Vocelka,Marrier,01/01/1981,F,2122,4106558723,4108044694,kris@gmail.com,Home Phone,s
+11,Minna,,Amigon,01/01/1989,M,19443,2158741229,2154228694,minna_amigon@yahoo.com,Home Phone,
+12,Abel,,Maclead,01/01/1989,F,1195,6313353414,6316773675,amaclead@gmail.com,Home Phone,s
+

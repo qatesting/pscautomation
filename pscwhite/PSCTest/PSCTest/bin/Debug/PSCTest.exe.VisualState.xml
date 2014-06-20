@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1003]C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe</TopNode>
-  <SelectedNode>[0-1003]C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe</SelectedNode>
+  <TopNode>[0-1035]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(4)</TopNode>
+  <SelectedNode>[0-1292]C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1003]C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" Expanded="true" Checked="true" />
-    <Node UniqueName="[0-1004]PSCTest" Expanded="true" Checked="true" />
-    <Node UniqueName="[0-1005]PSCTest.tests" Expanded="true" Checked="true" />
-    <Node UniqueName="[0-1000]PSCTest.tests.AddPatientTest" Expanded="true" Checked="true" />
-    <Node UniqueName="[0-1001]PSCTest.tests.AddPatientTest.LoginPSC" Checked="true" />
-    <Node UniqueName="[0-1002]PSCTest.tests.AddPatientTest.SearchAndAddPatient" Checked="true" />
+    <Node UniqueName="[0-1292]C:\workspace\pscautomation\pscwhite\PSCTest\PSCTest\bin\Debug\PSCTest.exe" Expanded="true" />
+    <Node UniqueName="[0-1293]PSCTest" Expanded="true" />
+    <Node UniqueName="[0-1294]PSCTest.tests" Expanded="true" />
+    <Node UniqueName="[0-1288]PSCTest.tests.AATestRunner" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1000]PSCTest.tests.DataValidationOfAdditionalInfoPage" Expanded="true" />
+    <Node UniqueName="[0-1136]PSCTest.tests.DataValidationOfAdditionalInfoPage.Before_Running_Test_Angainst_Billing_Address" Checked="true" />
+    <Node UniqueName="[0-1061]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1062]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1063]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1064]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1065]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Address_In_Additional_Info_Page(4)" Checked="true" />
+    <Node UniqueName="[0-1106]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1107]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1108]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1109]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1110]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_City_In_Additional_Info_Page(4)" Checked="true" />
+    <Node UniqueName="[0-1121]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1122]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1123]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1124]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1125]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_State_In_Additional_Info_Page(4)" Checked="true" />
+    <Node UniqueName="[0-1076]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1077]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1078]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1079]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1080]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Street_Address_In_Additional_Info_Page(4)" Checked="true" />
+    <Node UniqueName="[0-1091]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1092]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1093]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1094]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1095]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Billing_Zip_Code_In_Additional_Info_Page(4)" Checked="true" />
+    <Node UniqueName="[0-1031]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1032]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1033]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1034]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1035]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_City_In_Additional_Info_Page(4)" Checked="true" />
+    <Node UniqueName="[0-1046]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1047]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1048]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1049]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1050]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_State_In_Additional_Info_Page(4)" Checked="true" />
+    <Node UniqueName="[0-1001]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Street_Address_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1002]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Street_Address_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1003]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Street_Address_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1004]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Street_Address_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1005]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Street_Address_In_Additional_Info_Page(4)" Checked="true" />
+    <Node UniqueName="[0-1016]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Zip_Code_In_Additional_Info_Page" Expanded="true" />
+    <Node UniqueName="[0-1017]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Zip_Code_In_Additional_Info_Page(1)" Checked="true" />
+    <Node UniqueName="[0-1018]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Zip_Code_In_Additional_Info_Page(2)" Checked="true" />
+    <Node UniqueName="[0-1019]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Zip_Code_In_Additional_Info_Page(3)" Checked="true" />
+    <Node UniqueName="[0-1020]PSCTest.tests.DataValidationOfAdditionalInfoPage.Validate_Mailing_Zip_Code_In_Additional_Info_Page(4)" Checked="true" />
   </Nodes>
 </VisualState>

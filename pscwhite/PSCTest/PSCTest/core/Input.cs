@@ -38,7 +38,7 @@ namespace PSCTest.core
                     }
                     catch (Exception)
                     {
-                        Console.WriteLine("Not able to find the element");
+                        Console.WriteLine("Not able to find the element in input file");
                         return false;
                     }
                 }
@@ -50,7 +50,7 @@ namespace PSCTest.core
         {
             try
             {
-                Console.WriteLine("Trying to access the element using automation id");
+                //Console.WriteLine("Trying to access the element using automation id");
                 try
                 {
                     Button button = window.Get<Button>(SearchCriteria.ByAutomationId(elementid));
@@ -61,7 +61,7 @@ namespace PSCTest.core
                 {
                     try
                     {
-                        Console.WriteLine("Trying to access the element using Name of element");
+                        //Console.WriteLine("Trying to access the element using Name of element");
                         Button button = window.Get<Button>(SearchCriteria.ByText(elementid));
                         button.Click();
                         return true;
@@ -70,7 +70,7 @@ namespace PSCTest.core
                     {
                         try
                         {
-                            Console.WriteLine("Trying to access the element using ClassName id");
+                            //Console.WriteLine("Trying to access the element using ClassName id");
                             Button button = window.Get<Button>(SearchCriteria.ByClassName(elementid));
                             button.Click();
                             return true;
@@ -96,7 +96,7 @@ namespace PSCTest.core
                 while (iter <= item.Length)
                 {
                     try
-                    {                        
+                    {
                         item[iter].Click();
                         return true;
                     }
@@ -110,7 +110,7 @@ namespace PSCTest.core
             }
             catch (Exception)
             {
-                Console.WriteLine("Not able to find item");
+                Console.WriteLine("Click action can't be perform for this id -- " + id + " -- as this item not found in current window");
                 return false;
             }
         }
@@ -207,6 +207,37 @@ namespace PSCTest.core
             }
         }
 
+        //Read TestBox value
+        public static string ReadTextBoxValue(TestStack.White.UIItems.WindowItems.Window window, string elementid)
+        {
+          try
+            {
+                TextBox textbox = window.Get<TextBox>(SearchCriteria.ByAutomationId(elementid));
+                return textbox.Text;
+            }
+            catch (Exception)
+            {
+                try
+                {
+                    TextBox textbox = window.Get<TextBox>(SearchCriteria.ByText(elementid));
+                    return textbox.Text;
+                }
+                catch (Exception)
+                {
+                    try
+                    {
+                        TextBox textbox = window.Get<TextBox>(SearchCriteria.ByClassName(elementid));
+                        return textbox.Text;
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("Not able to get the text value");
+                        return null;
+                    }
+                }
+            }
+        }
+
         //Reverse SwitchTaxtBoxes using the key
         public static bool ReverseSwitchTextBox()
         {
@@ -227,6 +258,19 @@ namespace PSCTest.core
             Thread.Sleep(1000);
             return true;
         }
+
+        //Switch Text box multiple times
+        public static bool SwitchTextBox(int times)
+        {
+            for(int i = 0; i < times; i++)
+            {
+                Thread.Sleep(1000);
+                Keyboard.Instance.PressSpecialKey(TestStack.White.WindowsAPI.KeyboardInput.SpecialKeys.TAB);
+                Thread.Sleep(1000);                
+            }
+            return true;
+        }
+
         
         //Clear TextBox data
         public static bool ClearAll()

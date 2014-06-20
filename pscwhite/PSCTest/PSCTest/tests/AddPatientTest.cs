@@ -14,76 +14,71 @@ namespace PSCTest.tests
     [TestFixture]
     class AddPatientTest
     {
-        //SampleTEst Class Variables
-        Application launchapp;
-        Application application = null;
-        static pscWindow currentWindow;
-        static SearchPage search = null;
-        StandardOperations standard;
-        Tabs tabs; 
+         //SampleTEst Class Variables
+          Application application;
+          static pscWindow currentWindow;
+          static SearchPage search = null;
+          StandardOperations standard;
+          Tabs tabs;
+          public static int patientid = 1;
+          public static bool flag = false;
 
-        public static void Main(string[] args)     { }
 
         //SampleTest Class Constructor to launch PSC and get the current window of PSC
         [TestFixtureSetUp]
         public void SetupTest()
-        {            
-            launchapp = Setup.launchPSC();
+        {
             application = Setup.attachPSC();
             currentWindow = Setup.getWindow(application);
-            search = new SearchPage(currentWindow);
             standard = new StandardOperations(currentWindow);
+            search = new SearchPage(currentWindow);
             tabs = new Tabs(currentWindow);
-            //TestRunner runner = new TestRunner();            
-        }
- 
-        [Test]
-        public void LoginPSC()
-        {
-            Login.loginPSC(currentWindow);
-            Thread.Sleep(5000);
-            Screenshot screen = new Screenshot();
-        }
+        }  
 
-        [Test]
-        public void SearchAndAddPatient()
+        [SetUp]
+        public void SearchPatient()
         {
-            for (int patientid = 1; patientid < 9; patientid++)
+            if (patientid < 3)
             {
                 search.SearchPatient(patientid);
                 Thread.Sleep(5000);
-                if (search.IsSearchEmpty())
-                {
-                    Console.WriteLine("Not able to search the patient, So adding the patient");
-                    search.AddNewPatient();
-                    AddNewPatientInformation(patientid);
-                }
-                else
-                {
-                    Console.WriteLine("Patient Found");
-                    search.SelectFirstSearchRecord();
-                    Thread.Sleep(10000);
-                    tabs.Dashboard();
-                    Thread.Sleep(2000);
-                    standard.Ok();
-                    Thread.Sleep(5000);
-                    continue;
-                }
             }
-        }        
- 
-        public void AddNewPatientInformation(int patientid)
-        {
-            Thread.Sleep(5000);
-            BasicInfoPage bip = new BasicInfoPage(currentWindow);
-            bip.ProvideBasicInformation(patientid);
-            Thread.Sleep(2000);
-            standard.Save();
-            Thread.Sleep(3000);
-            tabs.Dashboard();
-            Thread.Sleep(2000);
-            standard.Ok();
+            patientid++;
         }
+
+        [Test]
+        public void AddNonExistingPatient()
+        {
+            if (search.IsSearchEmpty() && patientid < 3)
+            {
+                Console.WriteLine("Not able to search the patient, So adding the patient");
+                search.AddNewPatient();
+                Thread.Sleep(5000);
+                BasicInfoPage bip = new BasicInfoPage(currentWindow);
+                bip.ProvideBasicInformation("patientadditionalinfo.csv", patientid);
+                Thread.Sleep(2000);
+                standard.Save();
+                Thread.Sleep(3000);
+                tabs.Dashboard();
+                Thread.Sleep(2000);
+                standard.Ok();
+            }
+        }
+
+        [TearDown]
+        public void OpenPatientInformation()
+        {
+            if (!search.IsSearchEmpty() && patientid < 3)
+            {
+                Console.WriteLine("Patient Found in PSC");
+                search.SelectFirstSearchRecord();
+                Thread.Sleep(10000);
+                tabs.Dashboard();
+                Thread.Sleep(2000);
+                standard.Ok();
+                Thread.Sleep(5000);
+            }                
+        } 
     }
  }
 

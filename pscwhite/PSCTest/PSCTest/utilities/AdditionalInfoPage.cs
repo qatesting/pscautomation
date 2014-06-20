@@ -29,10 +29,10 @@ namespace PSCTest.utilities
             gpd = new GetPatientData();
         }
 
-        //Get Mailling address from the file
-        public void GetMailingAddress(int key)
+         //Get Mailling address from the file
+        public void GetMailingAddress(string filename, int key)
         {
-            additionalinfo = gpd.GetPatient("mailingaddressinfo.csv", key);            
+            additionalinfo = gpd.GetPatient(filename, key);            
         }
 
         //Get Guardian information from the file
@@ -54,12 +54,12 @@ namespace PSCTest.utilities
         }
 
         //Mailing Address information
-        public bool ProvideMailingAddress(int key)
+        public bool ProvideMailingAddress(string filename, int key)
         {
             //Click on Same as Mailing Address to get the item
             ClickSameAsMailingAddress();
             //Give all the information about mailing information
-            GetMailingAddress(key);
+            GetMailingAddress(filename, key);
             try
             {                  
                 Input.ReverseTabAndInputText(additionalinfo["Mailing-State"]);
@@ -76,13 +76,93 @@ namespace PSCTest.utilities
             }
         }
 
-        //Click on Same As Mailing Address
-        public bool SameAsMailingAddress(string value)
+        //Providing Street Code
+        public bool ProvideMailingStreet(string filename, int key)
         {
-            value = value.ToLower();
-            if(value.Equals("yes"))
-            {                
-                try
+            //Click on Same as Mailing Address to get the item
+            ClickSameAsMailingAddress();
+            //Give all the information about mailing information
+            GetMailingAddress(filename, key);
+            try
+            {
+                Input.ReverseSwitchTextBox();
+                Input.ReverseSwitchTextBox();
+                Input.ReverseSwitchTextBox();
+                Input.ReverseTabAndInputText(additionalinfo["Mailing-Street2"]);
+                Input.ReverseTabAndInputText(additionalinfo["Mailing-Street1"]);
+                return true;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Not able to provide Street1 and Street2 information");
+                return false;
+            }
+        }
+
+        //Providing Street address
+        public bool ProvideMailingZipCode(string filename, int key)
+        {
+            //Click on Same as Mailing Address to get the item
+            ClickSameAsMailingAddress();
+            //Give all the information about mailing information
+            GetMailingAddress(filename, key);
+            try
+            {
+                Input.ReverseSwitchTextBox();
+                Input.ReverseSwitchTextBox();
+                Input.ReverseTabAndInputText(additionalinfo["Mailing-ZipCode"]);
+                return true;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Not able to provide ZipCode of this address");
+                return false;
+            }
+        }
+
+        //Providing City in Mailing Address
+        public bool ProvideMailingCity(string filename, int key)
+        {
+            //Click on Same as Mailing Address to get the item
+            ClickSameAsMailingAddress();
+            //Give all the information about mailing information
+            GetMailingAddress(filename, key);
+            try
+            {
+                Input.ReverseSwitchTextBox();
+                Input.ReverseTabAndInputText(additionalinfo["Mailing-City"]);
+                return true;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Not able to complete City name");
+                return false;
+            }
+        }
+
+        //Provide State of the patient
+        public bool ProvideMailingState(string filename, int key)
+        {
+            //Click on Same as Mailing Address to get the item
+            ClickSameAsMailingAddress();
+            //Give all the information about mailing information
+            GetMailingAddress(filename, key);
+            try
+            {
+                Input.ReverseTabAndInputText(additionalinfo["Mailing-State"]);
+                return true;
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Not able to provide State name for the patient");
+                return false;
+            }
+        }
+
+        //Click on Same As Mailing Address
+        public bool SameAsMailingAddress()
+        {
+             try
                 {
                     Input.Click(additionalinfowindow, rj.GetElementValue("SameAsMailingAddress"));
                     checkvalue = true;
@@ -93,31 +173,109 @@ namespace PSCTest.utilities
                     Console.WriteLine("Not able to click Same As Mailing Address");
                     checkvalue = false;
                     return checkvalue;
-                }
-            }
-            return checkvalue;
-        }   
-
+                }   
+        } 
+     
         //Mailing Address information
-        public bool ProvideBillingAddress(int key)
+        public bool ProvideBillingAddress(string filename, int key)
         {
-            if (checkvalue == true)
-                return false;
             ClickSameAsMailingAddress();
             //Give all the information about mailing information
-            GetMailingAddress(key);
+            GetMailingAddress(filename, key);
             try
             {
-                Input.ReverseTabAndInputText(additionalinfo["Billing-Street1"]);
-                Input.ReverseTabAndInputText(additionalinfo["Billing-Street2"]);
-                Input.ReverseTabAndInputText(additionalinfo["Billing-ZipCode"]);
-                Input.ReverseTabAndInputText(additionalinfo["Billing-City"]);
-                Input.ReverseTabAndInputText(additionalinfo["Billing-State"]);
+                Input.SwitchTextBox(1);
+                Input.TabAndInputText(additionalinfo["Billing-Street1"]);
+                Input.TabAndInputText(additionalinfo["Billing-Street2"]);
+                Input.TabAndInputText(additionalinfo["Billing-ZipCode"]);
+                Input.TabAndInputText(additionalinfo["Billing-City"]);
+                Input.TabAndInputText(additionalinfo["Billing-State"]);
                 return true;
              }
             catch(Exception)
             {
                 Console.WriteLine("Not able to complete billing address information");
+                return false;
+            }
+        }
+
+        //Providing Street Code
+        public bool ProvideBillingStreet(string filename, int key)
+        {
+            //Click on Same as Mailing Address to get the item
+            ClickSameAsMailingAddress();
+            //Give all the information about mailing information
+            GetMailingAddress(filename, key);
+            try
+            {
+                Input.SwitchTextBox(1);
+                Input.TabAndInputText(additionalinfo["Billing-Street1"]);
+                Input.TabAndInputText(additionalinfo["Billing-Street2"]);
+                return true;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Not able to provide Street1 and Street2 information");
+                return false;
+            }
+        }
+
+        //Providing Street address
+        public bool ProvideBillingZipCode(string filename, int key)
+        {
+            //Click on Same as Mailing Address to get the item
+            ClickSameAsMailingAddress();
+            //Give all the information about mailing information
+            GetMailingAddress(filename, key);
+            try
+            {
+                Input.SwitchTextBox(3);
+                Input.TabAndInputText(additionalinfo["Billing-ZipCode"]);
+                return true;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Not able to provide ZipCode of this address");
+                return false;
+            }
+        }
+
+        //Providing City in Mailing Address
+        public bool ProvideBillingCity(string filename, int key)
+        {
+            //Click on Same as Mailing Address to get the item
+            ClickSameAsMailingAddress();
+            //Give all the information about mailing information
+            GetMailingAddress(filename, key);
+            try
+            {
+                Input.SwitchTextBox(4);
+                Input.TabAndInputText(additionalinfo["Billing-City"]);
+                return true;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Not able to complete City name in billing address");
+                return false;
+            }
+        }
+
+        //Provide State of the patient
+        public bool ProvideBillingState(string filename, int key)
+        {
+            //Click on Same as Mailing Address to get the item
+            ClickSameAsMailingAddress();
+            //Give all the information about mailing information
+            GetMailingAddress(filename, key);
+            try
+            {
+                Input.SwitchTextBox(5);
+                Input.TabAndInputText(additionalinfo["Billing-State"]);
+                return true;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Not able to provide State name for the patient in Billing Address");
                 return false;
             }
         }
@@ -278,6 +436,60 @@ namespace PSCTest.utilities
                 return true;
             }            
         }
-      
+
+        //Less then 18 years of Age
+        public bool IsPatientAgeIsLessThen18Years()
+        {
+            bool flag = Input.ClickOnSpecificItemByAutomationID(additionalinfowindow, rj.GetElementValue("LessThen18YearsAge"));
+            return flag;
+        }
+
+        //Verify if Next button is enable or not
+        public bool VerifyAdditionalInfoField()
+        {
+            bool result = standard.Next();
+            return result;
+        }
+
+        //Verifiying if Checkbox is checked
+        public bool IsSameAsMailingAddressChecked(string filename, int key)
+        {
+            try
+            {
+                ProvideMailingAddress(filename,key);
+                ClickSameAsMailingAddress();
+                Input.SwitchTextBox(2);
+                Input.ClearAll();
+                if (VerifyAdditionalInfoField())
+                {
+                    standard.Back();
+                    return true;
+                }
+                else
+                    return false;
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Checkbox seems to be checked");
+                return true;
+            }                   
+        }
+        
+        //Go to Additional Info page
+        public bool GoToAdditionalInfoPage()
+        {
+            try
+            {
+                while (standard.Back())
+                    continue;
+                standard.Next();
+                return true;
+            }
+            catch(Exception)
+            {
+                Console.WriteLine(">>>>>>>>>>>>>>>>>> Reach to additionalInfo page <<<<<<<<<<<<<<<<<<<<<<<");
+                return false;
+            }
+        }
     }
 }

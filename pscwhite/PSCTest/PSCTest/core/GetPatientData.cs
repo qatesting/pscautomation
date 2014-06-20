@@ -42,7 +42,6 @@ namespace PSCTest.core
 
             //Getting the path of the file
             var patients = new Dictionary<int, Dictionary<string, string>>();
-            //List<Dictionary<int, Dictionary<string, string>>> patientsdata = new List<Dictionary<int, Dictionary<string, string>>>();
             string curloc = System.Environment.CurrentDirectory;
             string fileloc = Path.Combine(curloc, "..\\..\\data\\" + filename);
 
@@ -119,6 +118,22 @@ namespace PSCTest.core
          ReadCSVFile(filename);
          return patientsdata;
      }
+
+    //Get all the patients id from the file
+    public List<int> GetPatientsID(string filename)
+    {
+        //Read given filename and save in the list of dictionary
+        ReadCSVFile(filename);
+        //List of all patient ids will be added in patientid
+        List<int> patientid = new List<int>();
+        //Loop to get all the patient ids
+        foreach (var patientvalue in patientsdata)
+        {
+            foreach (var kvp in patientvalue)            
+                patientid.Add(kvp.Key);          
+        }
+        return patientid;
+    }
 
     //Printing the values of List->Dictionary->Dictionary
     public void PrintFileData()
